@@ -19,7 +19,7 @@ public class TC_001_Verify_User_is_able_to_add_address_or_not_Test extends BaseT
 		Address_page addressPage = new Address_page(driver);
 		webDriverutility.javascriptScrollToElement(driver, addressPage.getAddNewBtn());
 		addressPage.getAddNewBtn().click();
-
+        System.out.println("Hii Add Address");
 		Add_new_address_page addNewAddress = new Add_new_address_page(driver);
 		addNewAddress.getFirstNameTextField().sendKeys(fileutility.readDataFromExcelFile("Sheet1", 1, 0));
 		addNewAddress.getLastNameTextField().sendKeys(fileutility.readDataFromExcelFile("Sheet1", 1, 1));

@@ -12,7 +12,7 @@ public class TC_001_Verify_User_is_able_to_delete_address_or_not_Test extends Ba
 	public void deleteAddress() throws EncryptedDocumentException, IOException, InterruptedException {
 		webDriverutility.javascriptScrollToElement(driver, homepage.getAddressBtn());
 		homepage.getAddressBtn().click();
-
+         System.out.println("Hii delete address");
 		Address_page addressPage = new Address_page(driver);
 		webDriverutility.javascriptScrollToElement(driver, addressPage.getAddNewBtn());
 		addressPage.getDeleteBtn().click();
