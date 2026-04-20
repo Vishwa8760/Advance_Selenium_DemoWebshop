@@ -60,10 +60,10 @@ public class BaseTest {
 	public void bc() throws IOException {
 		System.out.println("@BeforeClass  Browser launch");
 
-		String browser = fileutility.readDataFromPropertyFile("browserName"); // Take the browser from property file
-		String url = fileutility.readDataFromPropertyFile("baseUrl"); // take the URL from property file
-    // String browser = System.getProperty("browserName");  //This is parameter way passing
-     //  String url = System.getProperty("baseUrl");
+	//	String browser = fileutility.readDataFromPropertyFile("browserName"); // Take the browser from property file
+	//	String url = fileutility.readDataFromPropertyFile("baseUrl"); // take the URL from property file
+     String browser = System.getProperty("browserName");  //This is parameter way passing
+      String url = System.getProperty("baseUrl");
 		
 		
 		if (browser.equalsIgnoreCase("chrome")) {
